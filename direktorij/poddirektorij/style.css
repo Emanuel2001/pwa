@@ -1,0 +1,129 @@
+
+body{
+    overflow-x: hidden;
+}
+#naslov h1{
+    font-size: 8vh;
+    color: rgb(44, 71, 60);
+    margin-bottom: 0;
+}
+
+#naslov p{
+    font-size: 2.8vh;
+    color: grey;
+}
+
+#navigacija li{
+    list-style-type: none;
+}
+
+#navigacija a{
+    color: black;
+    text-decoration: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+   
+}
+
+#navigacija a:hover{
+    background: rgb(150, 145, 145);
+    text-decoration: none;
+}
+
+#navigacija {
+    padding-bottom: 5px;
+    border-bottom: solid black 2px;
+}
+
+section{
+    margin-top: 2vh;
+    margin-bottom: 4.5vh;
+}
+
+section p{
+    font-size: 26px;
+    overflow-wrap: break-word;
+}
+
+h2.bullet1, h2.bullet2{
+    display: list-item;          
+    list-style-type: square;     
+    list-style-position: inside;
+    margin-bottom: 1vh;
+    font-weight: bold;
+    padding-bottom: 0.7vh;
+ 
+}
+
+h2.bullet1::marker {
+    color: rgb(173, 121, 24);
+}
+
+h2.bullet2::marker {
+    color: rgb(112, 20, 187);
+}
+h2.bullet2{
+    margin-top: 2vh;
+}
+
+#break h2.bullet2{
+    padding-top: 2vh;
+    border-top: solid black 2px;
+}
+
+
+#footer{
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+    max-width: 1300px;
+    color: black;
+}
+
+@media only screen and (max-width: 991px) {
+    article{
+        margin-bottom: 8vh;
+    }
+    article p{
+        margin-top: 2vh;
+    }
+    
+}
+
+
+/**/
+
+#europa {
+    
+    height: 12vh;
+    border-bottom: solid rgb(199, 196, 196) 2px;
+}
+header #europa{
+    width: 100%;
+}
+#europa .row{
+    height: 12vh;
+
+}
+#clanak{
+    max-width: 127vh;
+}
+#clanak h1{
+    font-size: 6vh;
+    padding-bottom: 5vh;
+}
+#europa h2{
+    font-size: 2vh;
+}
+
+
+/**/
+
+#forma{
+    margin-top: 5vh;
+}
+
+input[type="file"]{
+    color: transparent;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
+        <style>
+            .error{
+                color: red;
+                border-color: red;
+            }
+        </style>
+    </head>
+
+    
+    <body>
+
+      <div class="container-fluid">
+
+        <header>  
+          <div class="container mt-4" id="naslov">
+            <div class="row">
+              <div class="col text-align-center">
+                <h1 class="text-center">El Confidencial</h1>
+                <p class="text-center">EL DIARIO DE LOS LECTORES INFLUYENTES</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5" id="navigacija">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <li><a href="indeks.php" class="font-weight-bold p-2 m-2">HOME</a></li>
+                <li><a href="europa.php" class="font-weight-bold p-2 m-2">EUROPA</a></li>
+                <li><a href="svijet.php" class="font-weight-bold p-2 m-2">SVIJET</a></li>
+                <li><a href="unos.html" class="font-weight-bold p-2 m-2">UNOS</a></li>
+                <li><a href="registracija.php" class="font-weight-bold p-2 m-2">ADMINISTRACIJA</a></li>
+              </div>
+            </div>
+          </div>
+           
+        </header> 
+
+        <div class="container" id="forma">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+
+                    <form action="skripta.php" method="POST" enctype="multipart/form-data" name="forma">
+
+                        <div class="form-item">
+                            <label for="title">Naslov vijesti</label>
+                            <div class="form-field">
+                                <input type="text" name="title" class="form-field-textual">
+                            </div>
+                        </div>
+            
+                        <div class="form-item">
+                            <label for="about">Kratki sadržaj vijesti (do 50 znakova)</label>
+                            <div class="form-field">
+                                <textarea name="about" id="" cols="60" rows="5" class="formfield-textual"></textarea>
+                            </div>
+                        </div>
+            
+                        <div class="form-item">
+                            <label for="content">Sadržaj vijesti</label>
+                            <div class="form-field">
+                                <textarea name="content" id="" cols="60" rows="5" class="form-field-textual"></textarea>
+                            </div>
+                        </div>
+            
+                        <div class="form-item">
+                            <label for="photo">Slika: </label>
+                            <div class="form-field">
+                                <input type="file" accept="image/jpg,image/gif" class="input-text" name='photo'/>
+                            </div>
+                        </div>
+            
+                        <div class="form-item">
+                            <label for="category">Kategorija vijesti</label>
+                       
+                            <div class="form-field">
+                                <select name="category" id="" class="form-field-textual">
+                                    <option value="europa">Europa</option>
+                                    <option value="svijet">Svijet</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="form-item">
+                            <label>Spremiti u arhivu: 
+                                <div class="form-field">
+                                    <input type="checkbox" name="archive">
+                                </div>
+                            </label>
+                        </div>
+            
+                        <div class="form-item">
+                            <button type="reset" value="Poništi">Poništi</button>
+                            <button type="submit" value="Prihvati" name="submit">Prihvati</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        
+           
+     
+       
+ 
+        <footer>
+          <div class="container-fluid" id="footer">
+            <div class="row">
+              <div class="col-12  ">
+                <p>© Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati officiis molestiae similique dolore ipsam sed dolorum veritatis aperiam amet.</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </footer>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+      <script src="validacija.js"></script>
+    </body>
+</html>
